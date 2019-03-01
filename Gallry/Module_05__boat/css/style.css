@@ -1,0 +1,293 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-image: url(../images/background.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .wrapper {
+        width: 1020px;
+        padding: 30px;
+        margin: auto;
+        position: relative;
+    }
+    
+    .navigator {
+        display: block;
+        padding: 20px;
+        position: relative;
+        height: 200px;
+    }
+    
+    .menuleft {
+        display: inline-block;
+        width: 35%;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    
+    .menuright {
+        display: inline-block;
+        width: 35%;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    
+    .logo {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 140px;
+    }
+    
+    .logotext {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Dorsa;
+        font-size: 60px;
+        color: rgb(37, 50, 83);
+    }
+    
+    .leftul {
+        list-style-type: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu-item {
+        display: inline-block;
+        width: 30%;
+        position: relative;
+    }
+    
+    .menucolor {
+        font-family: Pathway Gothic One;
+        width: 30%;
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: 10px transparent solid;
+    }
+    
+    .menucolor:hover {
+        color: rgb(37, 53, 85);
+    }
+    
+    .submenu {
+        list-style-type: none;
+        display: none;
+        position: absolute;
+        left: 15px;
+        margin-top: 10px;
+        padding: 5px 10px;
+        background: rgb(255, 255, 255);
+    }
+    
+    .menu-item:hover>.submenu {
+        display: block;
+    }
+    
+    .submenu-item {
+        font-family: Pathway Gothic One;
+        font-size: 22px;
+        color: rgb(37, 53, 85);
+    }
+    
+    .submenu::before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 8.7px 5px;
+        border-color: transparent transparent rgb(250, 255, 255) transparent;
+        position: absolute;
+        right: 30px;
+        bottom: 85px;
+    }
+    
+    .submenu-item:hover {
+        color: rgb(8, 247, 247)
+    }
+    
+    .main {
+        background-color: rgb(250, 255, 255);
+        display: block;
+    }
+    
+    .mainimg {
+        display: block;
+        padding: 60px;
+        position: relative;
+    }
+    
+    .img {
+        width: 100%;
+    }
+    
+    .textboxes {
+        display: inline-block;
+        position: absolute;
+        top: 40%;
+    }
+    
+    .whitebox {
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+    }
+    
+    .whitebox-text {
+        text-transform: uppercase;
+        color: rgb(39, 48, 71);
+        font-family: Pathway Gothic One;
+        font-size: 24px;
+    }
+    
+    .bluebox {
+        display: block;
+        background-color: rgb(57, 175, 230);
+        padding: 15px;
+    }
+    
+    .bluebox-text {
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-family: Pathway Gothic One;
+        font-size: 32px;
+    }
+    
+    .circle {
+        display: inline-block;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background-color: rgb(57, 175, 230);
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        line-height: 85px;
+        text-align: center;
+    }
+    
+    .pointer-left {
+        margin-right: 5%;
+    }
+    
+    .pointer-right {
+        margin-left: 5px;
+    }
+    
+    .footer {
+        background-color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        padding: 0px 60px 110px 60px;
+        font-size: 0px;
+    }
+    
+    .footer-text {
+        display: block;
+        font-family: Pathway Gothic One;
+        color: rgb(39, 48, 71);
+        font-size: 30px;
+        padding-bottom: 60px;
+    }
+    
+    .bottombox {
+        display: inline-block;
+        width: 32%;
+        margin-right: 2%;
+        position: relative;
+    }
+    
+    .bottombox:last-child {
+        margin: 0;
+    }
+    
+    .bottom-img {
+        width: 100%;
+    }
+    
+    .box-one {
+        display: none;
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        background-color: rgb(24, 49, 72);
+        width: 50%;
+        height: 100%;
+        font-family: Pathway Gothic One;
+    }
+    
+    .descr-called {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px 20px;
+    }
+    
+    .descr {
+        text-transform: none;
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0px 4px;
+    }
+    
+    .descr-bottom {
+        text-transform: none;
+        text-decoration: none;
+        display: block;
+        background-color: rgb(251, 246, 251);
+        width: 60px;
+        height: 20px;
+        border-radius: 10%;
+        margin: 10% 0% 20% 50%;
+        font-size: 16px;
+        color: rgb(11, 27, 41);
+        text-align: center;
+    }
+    
+    .box-first:hover>.box-one {
+        display: block;
+    }
+    
+    .descr-bottom:hover {
+        color: rgb(8, 247, 247)
+    }
+    
+    .totop {
+        display: inline-block;
+        background-color: rgb(57, 175, 230);
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        position: fixed;
+        right: 12em;
+        bottom: 5em;
+        transform: rotate(90deg);
+        text-align: center;
+        line-height: 20px;
+    }
+    
+    .totoptext {
+        text-decoration: none;
+        color: rgb(250, 255, 255);
+    }
